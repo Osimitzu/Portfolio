@@ -10,7 +10,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between px-4 items-center bg-[#0a192f] text-gray-300">
+    <div className="fixed w-full h-20 flex justify-between px-4 items-center bg-[#0a192f] text-gray-300">
       <div>
         <img src={Logo} alt="logoImage" style={{ width: "50px" }} />
       </div>
@@ -22,11 +22,11 @@ const Navbar = () => {
             Home
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="about" smooth={true} duration={500}>
             About
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link to="skills" smooth={true} duration={500}>
             Skills
@@ -62,11 +62,11 @@ const Navbar = () => {
             Home
           </Link>
         </li>
-        <li className="py-4 text-4xl">
+        {/* <li className="py-4 text-4xl">
           <Link onClick={handleClick} to="about" smooth={true} duration={500}>
             About
           </Link>
-        </li>
+        </li> */}
         <li className="py-4 text-4xl">
           <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
             Skills

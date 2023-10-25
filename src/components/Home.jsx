@@ -1,31 +1,40 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div name="home" className="w-full h-screen bg-[#0a192f]">
+    <div
+      // name="home"
+      className="w-full h-full bg-[#0a192f] px-4 md:px-20 flex justify-center items-center"
+    >
       {/* Container */}
-      <div className="max-w[1000px] mx-auto px-8 flex flex-col justify-center h-full">
-        <p className="text-pink-600">Hi, my name is</p>
-        <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
+      <div className="flex flex-col justify-center items-center w-full text-left">
+        <p className="text-pink-600 w-full text-lg">Hi, my name is</p>
+        <h1 className="w-full text-3xl md:text-6xl font-bold text-[#ccd6f6] py-2">
           Osiris Contreras
         </h1>
-        <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]">
-          I'm a Full Stack Developer.
+        <h2 className="w-full text-3xl md:text-6xl font-bold text-[#8892b0]">
+          Full Stack Developer
         </h2>
-        <p className="text-[#8892b0] py-4 max-w-[700px]">
-          I'm currently studying Software Development at the Instituto de
+        <p className="w-full text-[#8892b0] py-2">
+          {/* I'm currently studying Software Development at the Instituto de
           Estudios Universitarios. I have recently completed the full-stack web
           development boot-camp at Academlo and obtained my Google IT Support
-          certification.
+          certification. */}
+          I'm studying Software Development at Instituto de Estudios
+          Universitarios. I completed a full-stack web development bootcamp at
+          Academlo and obtained my Google IT Support certification.
         </p>
-        <div>
-          <button className="group text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600">
-            View Work
-            <span className="group-hover:rotate-90 duration-300">
-              <HiArrowNarrowRight className="ml-4" />
-            </span>
-          </button>
+        <div className="w-full flex justify-center items-center lg:py-4">
+          <Link to="work" smooth={true} duration={500}>
+            <button className="group text-white border-2 px-6 py-3 flex items-center hover:bg-pink-600 hover:border-pink-600">
+              View Work
+              <span className="group-hover:rotate-90 duration-300">
+                <HiArrowNarrowRight className="ml-4" />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

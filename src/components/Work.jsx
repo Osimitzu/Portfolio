@@ -1,165 +1,39 @@
 import React from "react";
+import ProjectItem from "./ProjectItem";
 import SushiProject from "../assets/SushiProject.png";
+import MobileSushi from "../assets/MobileSushiProject.png";
 import EcommerceProject from "../assets/EcommerceProject.png";
 
 const Work = () => {
   return (
-    <div name="work" className="w-full md:h-screen bg-[#0a192f] text-gray-300">
-      <div className="max-w[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div className="pb-8 ">
-          <p className="text-4xl font-bold inline border-b-4 border-pink-600">
+    <main
+      // name="work"
+      className="w-full h-full bg-[#0a192f] text-gray-300 px-4 md:px-20 flex justify-center items-center"
+    >
+      <section className="flex flex-col justify-center items-center w-full">
+        <section className="w-full">
+          <p className="text-2xl md:text-4xl font-bold inline border-b-4 border-pink-600">
             Work
           </p>
-          <p className="py-4">// Check out some of my recent work</p>
-        </div>
+          <p className="py-4">Check out some of my recent work</p>
+        </section>
 
         {/* Card container */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <section className="w-full py-4 flex justify-center items-center flex-wrap gap-3 bg-teal-300">
           {/* Card item */}
-          <div
-            style={{ backgroundImage: `url(${SushiProject})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100 text-center">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                Sushi App
-              </span>
-              <div className="pt-8 text-center">
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            style={{ backgroundImage: `url(${EcommerceProject})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100 text-center">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                E-commerce API
-              </span>
-              <div className="pt-8 text-center">
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            style={{ backgroundImage: `url(${SushiProject})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100 text-center">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                Sushi App
-              </span>
-              <div className="pt-8 text-center">
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            style={{ backgroundImage: `url(${EcommerceProject})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100 text-center">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                E-commerce API
-              </span>
-              <div className="pt-8 text-center">
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            style={{ backgroundImage: `url(${SushiProject})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100 text-center">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                Sushi App
-              </span>
-              <div className="pt-8 text-center">
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            style={{ backgroundImage: `url(${EcommerceProject})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100 text-center">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                E-commerce API
-              </span>
-              <div className="pt-8 text-center">
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          <ProjectItem
+            backImg={SushiProject}
+            linkDemo="https://sushilotte.netlify.app"
+            linkCode="https://github.com/Osimitzu/sushiVanillaProject"
+          />
+          <ProjectItem
+            backImg={SushiProject}
+            linkDemo="https://sushilotte.netlify.app"
+            linkCode="https://github.com/Osimitzu/sushiVanillaProject"
+          />
+        </section>
+      </section>
+    </main>
   );
 };
 

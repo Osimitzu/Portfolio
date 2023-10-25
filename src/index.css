@@ -21,7 +21,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 250px;
+  /* height: 250px; */
+  /* width: fit-content; */
 }
 
 .content-div:hover {
