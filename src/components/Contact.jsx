@@ -1,10 +1,11 @@
 import React from "react";
+import Footer from "./Footer";
 
 const Contact = () => {
   return (
     <div
       // name="contact"
-      className="w-full h-full bg-[#0a192f] px-4 md:px-20 flex justify-center items-center flex-col gap-10"
+      className="w-full h-full bg-[#0a192f] px-4 md:px-20 flex justify-center items-center flex-col gap-5"
     >
       <div className="w-full">
         <p className="text-2xl md:text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
@@ -42,11 +43,14 @@ const Contact = () => {
           className="bg-[#ccd6f6] p-2"
         ></textarea>
         <div className="flex justify-center items-center w-full h-14">
-          <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 flex justify-center items-center w-24">
+          <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 flex justify-center items-center w-24 border-pink-600 lg:border-white">
             Submit
           </button>
         </div>
       </form>
+      <div className="w-full lg:hidden">
+        <Footer />
+      </div>
     </div>
   );
 };
