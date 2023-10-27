@@ -9,19 +9,19 @@ function App() {
   return (
     <main>
       <Navbar />
-      <section name="home" className="w-full h-screen pt-20 bg-red-400">
+      <section name="home" className="w-full h-screen pt-20 bg-[#0a192f]">
         <Hero />
       </section>
-      {/* <section name="about" className="w-full h-screen pt-20 bg-red-400">
+      {/* <section name="about" className="w-full h-screen pt-20 bg-[#0a192f]">
         <About />
       </section> */}
-      <section name="skills" className="w-full h-screen pt-20 bg-red-400">
+      <section name="skills" className="w-full h-screen pt-20 bg-[#0a192f]">
         <Skills />
       </section>
-      <section name="work" className="w-full h-screen pt-20 bg-red-400">
+      <section name="work" className="w-full h-screen pt-20 bg-[#0a192f]">
         <Work />
       </section>
-      <section name="contact" className="w-full h-screen pt-20 bg-red-400">
+      <section name="contact" className="w-full h-screen pt-20 bg-[#0a192f]">
         <Contact />
       </section>
     </main>

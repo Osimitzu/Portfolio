@@ -26,7 +26,7 @@ const Footer = () => {
         </li>
         <li>
           <a
-            href="/"
+            href="mailto:angel_aocc@hotmail.com"
             target="_blank"
             className="flex justify-center items-center w-full text-pink-600"
           >
