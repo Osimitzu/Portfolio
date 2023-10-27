@@ -58,7 +58,7 @@ const Work = () => {
       className="w-full h-full bg-[#0a192f] text-gray-300 px-4 md:px-20 flex justify-center items-center"
     >
       <section className="flex flex-col justify-center items-center w-full">
-        <section className="w-full">
+        <section className="w-full mb-12 lg:mb-4">
           <p className="text-2xl md:text-4xl font-bold inline border-b-4 border-pink-600">
             Work
           </p>

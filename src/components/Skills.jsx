@@ -22,7 +22,7 @@ const Skills = () => {
     >
       {/* Container */}
       <div className="w-full flex flex-col justify-center items-center">
-        <div className="w-full">
+        <div className="w-full mb-12 md:mb-1">
           <p className="text-2xl md:text-4xl font-bold inline border-b-4 border-pink-600">
             Skills
           </p>
