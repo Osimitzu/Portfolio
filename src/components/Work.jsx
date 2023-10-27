@@ -2,6 +2,9 @@ import { useState } from "react";
 import { RxDotFilled } from "react-icons/rx";
 import ProjectItem from "./ProjectItem";
 import SushiProject from "../assets/SushiProject.png";
+import InvitationProject from "../assets/InvitationProject.png";
+import FortuneProject from "../assets/FortuneProject.png";
+import WeatherProject from "../assets/WeatherProject.png";
 import EcommerceProject from "../assets/EcommerceProject.png";
 
 const Work = () => {
@@ -9,10 +12,16 @@ const Work = () => {
 
   const projects = [
     {
-      name: "Sushi Project",
+      name: "Sushi Landing",
       backImg: SushiProject,
       linkDemo: "https://sushilotte.netlify.app",
       linkCode: "https://github.com/Osimitzu/sushiVanillaProject",
+    },
+    {
+      name: "Weather App",
+      backImg: WeatherProject,
+      linkDemo: "https://osimitzu-weather-app.netlify.app",
+      linkCode: "https://github.com/Osimitzu/Weather-App",
     },
     {
       name: "E-commerce API",
@@ -21,16 +30,16 @@ const Work = () => {
       linkCode: "https://github.com/Osimitzu/ecommerce_project_BACKEND",
     },
     {
-      name: "Sushi Project",
-      backImg: SushiProject,
-      linkDemo: "https://sushilotte.netlify.app",
-      linkCode: "https://github.com/Osimitzu/sushiVanillaProject",
+      name: "Birthday Invitation",
+      backImg: InvitationProject,
+      linkDemo: "https://xv-invitation.netlify.app",
+      linkCode: "https://github.com/Osimitzu/XV-invitation",
     },
     {
-      name: "E-commerce API",
-      backImg: EcommerceProject,
-      linkDemo: "https://e-commerce-backend-sxpd.onrender.com/docs/",
-      linkCode: "https://github.com/Osimitzu/ecommerce_project_BACKEND",
+      name: "Fortune Cookies",
+      backImg: FortuneProject,
+      linkDemo: "https://osimitzu-fortune.netlify.app",
+      linkCode: "https://github.com/Osimitzu/Fortune-Cookie",
     },
   ];
 
