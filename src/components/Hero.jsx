@@ -22,9 +22,9 @@ const Home = () => {
           Universitarios. I completed a full-stack web development bootcamp at
           Academlo and obtained my Google IT Support certification.
         </p>
-        <div className="w-full flex justify-center items-center lg:py-4">
+        <div className="w-full flex justify-center items-center lg:py-4 transition-all duration-300">
           <Link to="work" smooth={true} duration={500}>
-            <button className="group text-white border-2 px-6 py-3 flex items-center hover:bg-pink-600 hover:border-pink-600 border-pink-600 lg:border-white">
+            <button className="group text-white border-2 px-6 py-3 flex items-center hover:bg-pink-600 hover:border-pink-600 border-pink-600 lg:border-white transition-all duration-300">
               View Work
               <span className="lg:rotate-0 lg:group-hover:rotate-90 duration-300">
                 <HiArrowNarrowRight className="hidden lg:block lg:ml-4" />

@@ -19,31 +19,31 @@ const Navbar = () => {
       {/* menu */}
 
       <ul className="hidden md:flex">
-        <li>
-          <Link to="home" smooth={true} duration={500}>
+        <Link to="home" smooth={true} duration={500}>
+          <li className="hover:text-pink-600 transition-all duration-300">
             Home
-          </Link>
-        </li>
+          </li>
+        </Link>
         {/* <li>
           <Link to="about" smooth={true} duration={500}>
             About
           </Link>
         </li> */}
-        <li>
-          <Link to="skills" smooth={true} duration={500}>
+        <Link to="skills" smooth={true} duration={500}>
+          <li className="hover:text-pink-600 transition-all duration-300">
             Skills
-          </Link>
-        </li>
-        <li>
-          <Link to="work" smooth={true} duration={500}>
+          </li>
+        </Link>
+        <Link to="work" smooth={true} duration={500}>
+          <li className="hover:text-pink-600 transition-all duration-300">
             Work
-          </Link>
-        </li>
-        <li>
-          <Link to="contact" smooth={true} duration={500}>
+          </li>
+        </Link>
+        <Link to="contact" smooth={true} duration={500}>
+          <li className="hover:text-pink-600 transition-all duration-300">
             Contact
-          </Link>
-        </li>
+          </li>
+        </Link>
       </ul>
 
       {/* hamburguer */}
@@ -56,34 +56,26 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "fixed top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            : "fixed top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center gap-6 overflow-hidden"
         }
       >
-        <li className="py-4 text-4xl">
-          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
+        <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+          <li className="py-4 text-4xl">Home</li>
+        </Link>
         {/* <li className="py-4 text-4xl">
           <Link onClick={handleClick} to="about" smooth={true} duration={500}>
             About
           </Link>
         </li> */}
-        <li className="py-4 text-4xl">
-          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
-            Skills
-          </Link>
-        </li>
-        <li className="py-4 text-4xl">
-          <Link onClick={handleClick} to="work" smooth={true} duration={500}>
-            Work
-          </Link>
-        </li>
-        <li className="py-4 text-4xl">
-          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li>
+        <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
+          <li className="py-4 text-4xl">Skills</li>
+        </Link>
+        <Link onClick={handleClick} to="work" smooth={true} duration={500}>
+          <li className="py-4 text-4xl">Work</li>
+        </Link>
+        <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+          <li className="py-4 text-4xl">Contact</li>
+        </Link>
       </ul>
 
       {/* social icons */}
@@ -93,7 +85,7 @@ const Navbar = () => {
             <a
               href="https://www.linkedin.com/in/osiriscontreras97/"
               target="_blank"
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full h-full text-gray-300"
             >
               Linkedin <FaLinkedin size={30} />
             </a>
@@ -102,7 +94,7 @@ const Navbar = () => {
             <a
               href="https://github.com/Osimitzu"
               target="_blank"
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full h-full text-gray-300"
             >
               Github <FaGithub size={30} />
             </a>
@@ -111,16 +103,16 @@ const Navbar = () => {
             <a
               href="mailto:angel_aocc@hotmail.com"
               target="_blank"
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full h-full text-gray-300"
             >
               Email <HiOutlineMail size={30} />
             </a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
-              href="/resume.pdf"
-              download="resume.pdf"
-              className="flex justify-between items-center w-full text-gray-300"
+              href="/Osiris-resume.pdf"
+              download="Osiris-resume.pdf"
+              className="flex justify-between items-center w-full h-full text-gray-300"
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
