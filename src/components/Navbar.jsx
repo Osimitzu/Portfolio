@@ -18,7 +18,7 @@ const Navbar = () => {
       </div>
       {/* menu */}
 
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex text-xl">
         <Link to="home" smooth={true} duration={500}>
           <li className="hover:text-pink-600 transition-all duration-300">
             Home
