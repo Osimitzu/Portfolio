@@ -7,7 +7,7 @@ import Work from "./components/Work";
 
 function App() {
   return (
-    <main>
+    <main className="bg-[#0a192f]">
       <Navbar />
       <section name="home" className="w-full h-screen pt-20 bg-[#0a192f]">
         <Hero />
