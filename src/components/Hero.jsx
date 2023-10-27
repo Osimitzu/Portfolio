@@ -1,5 +1,5 @@
 import React from "react";
-import { HiArrowNarrowRight } from "react-icons/hi";
+import { HiArrowNarrowRight, HiArrowNarrowDown } from "react-icons/hi";
 import { Link } from "react-scroll";
 
 const Home = () => {
@@ -26,8 +26,9 @@ const Home = () => {
           <Link to="work" smooth={true} duration={500}>
             <button className="group text-white border-2 px-6 py-3 flex items-center hover:bg-pink-600 hover:border-pink-600">
               View Work
-              <span className="rotate-90 lg:rotate-0 lg:group-hover:rotate-90 duration-300">
-                <HiArrowNarrowRight className="lg:ml-4" />
+              <span className="lg:rotate-0 lg:group-hover:rotate-90 duration-300">
+                <HiArrowNarrowRight className="hidden lg:block lg:ml-4" />
+                <HiArrowNarrowDown className="lg:hidden ml-4" />
               </span>
             </button>
           </Link>

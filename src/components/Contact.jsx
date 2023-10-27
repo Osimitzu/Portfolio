@@ -4,22 +4,22 @@ const Contact = () => {
   return (
     <div
       // name="contact"
-      className="w-full h-full bg-[#0a192f] px-4 md:px-20 flex justify-center items-center"
+      className="w-full h-full bg-[#0a192f] px-4 md:px-20 flex justify-center items-center flex-col gap-10"
     >
+      <div className="w-full">
+        <p className="text-2xl md:text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
+          Contact
+        </p>
+        <p className="text-gray-300 py-4">
+          Feel free to send me an email, and I will respond as soon as possible.
+        </p>
+      </div>
+
       <form
         method="POST"
         action="https://getform.io/f/6f4fc7f5-3f75-4d67-9dcd-2410fbed0c8a"
         className="flex flex-col max-w-[600px] w-full"
       >
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
-            Contact
-          </p>
-          <p className="text-gray-300 py-4">
-            // Submit the form below or shot me an email -
-            angel_aocc@hotmail.com{" "}
-          </p>
-        </div>
         <input
           type="text"
           placeholder="Name"
@@ -36,14 +36,16 @@ const Contact = () => {
         />
         <textarea
           name="message"
-          rows="10"
+          // rows="10"
           placeholder="Message"
           required
           className="bg-[#ccd6f6] p-2"
         ></textarea>
-        <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center">
-          Let's Collaborate
-        </button>
+        <div className="flex justify-center items-center w-full h-14">
+          <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 flex justify-center items-center w-24">
+            Submit
+          </button>
+        </div>
       </form>
     </div>
   );
