@@ -12,7 +12,9 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-20 flex justify-between px-4 items-center bg-[#0a192f] text-gray-300">
       <div>
-        <img src={Logo} alt="logoImage" style={{ width: "50px" }} />
+        <a href="/">
+          <img src={Logo} alt="logoImage" style={{ width: "50px" }} />
+        </a>
       </div>
       {/* menu */}
 
@@ -45,7 +47,7 @@ const Navbar = () => {
       </ul>
 
       {/* hamburguer */}
-      <div onClick={handleClick} className="md:hidden z-10">
+      <div onClick={handleClick} className="md:hidden z-50">
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
@@ -54,7 +56,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            : "fixed top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
         }
       >
         <li className="py-4 text-4xl">
@@ -89,7 +91,8 @@ const Navbar = () => {
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
             <a
-              href="/"
+              href="https://www.linkedin.com/in/osiriscontreras97/"
+              target="_blank"
               className="flex justify-between items-center w-full text-gray-300"
             >
               Linkedin <FaLinkedin size={30} />
@@ -97,7 +100,8 @@ const Navbar = () => {
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
             <a
-              href="/"
+              href="https://github.com/Osimitzu"
+              target="_blank"
               className="flex justify-between items-center w-full text-gray-300"
             >
               Github <FaGithub size={30} />
@@ -106,6 +110,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
             <a
               href="/"
+              target="_blank"
               className="flex justify-between items-center w-full text-gray-300"
             >
               Email <HiOutlineMail size={30} />
@@ -114,6 +119,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
               href="/"
+              target="_blank"
               className="flex justify-between items-center w-full text-gray-300"
             >
               Resume <BsFillPersonLinesFill size={30} />

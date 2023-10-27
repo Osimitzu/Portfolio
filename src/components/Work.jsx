@@ -1,10 +1,57 @@
-import React from "react";
+import { useState } from "react";
+import { RxDotFilled } from "react-icons/rx";
 import ProjectItem from "./ProjectItem";
 import SushiProject from "../assets/SushiProject.png";
-import MobileSushi from "../assets/MobileSushiProject.png";
 import EcommerceProject from "../assets/EcommerceProject.png";
 
 const Work = () => {
+  const [index, setIndex] = useState(0);
+
+  const projects = [
+    {
+      name: "Sushi Project",
+      backImg: SushiProject,
+      linkDemo: "https://sushilotte.netlify.app",
+      linkCode: "https://github.com/Osimitzu/sushiVanillaProject",
+    },
+    {
+      name: "E-commerce API",
+      backImg: EcommerceProject,
+      linkDemo: "https://e-commerce-backend-sxpd.onrender.com/docs/",
+      linkCode: "https://github.com/Osimitzu/ecommerce_project_BACKEND",
+    },
+    {
+      name: "Sushi Project",
+      backImg: SushiProject,
+      linkDemo: "https://sushilotte.netlify.app",
+      linkCode: "https://github.com/Osimitzu/sushiVanillaProject",
+    },
+    {
+      name: "E-commerce API",
+      backImg: EcommerceProject,
+      linkDemo: "https://e-commerce-backend-sxpd.onrender.com/docs/",
+      linkCode: "https://github.com/Osimitzu/ecommerce_project_BACKEND",
+    },
+  ];
+
+  const prevProject = () => {
+    console.log("anterior");
+    const firstIndex = index === 0;
+    const newIndex = firstIndex ? projects.length - 1 : index - 1;
+    setIndex(newIndex);
+  };
+
+  const nextProject = () => {
+    console.log("siguiente");
+    const lastIndex = index === projects.length - 1;
+    const newIndex = lastIndex ? 0 : index + 1;
+    setIndex(newIndex);
+  };
+
+  const goToSlide = (slideIndex) => {
+    setIndex(slideIndex);
+  };
+
   return (
     <main
       // name="work"
@@ -19,18 +66,32 @@ const Work = () => {
         </section>
 
         {/* Card container */}
-        <section className="w-full py-4 flex justify-center items-center flex-wrap gap-3 bg-teal-300">
-          {/* Card item */}
+        <section className="w-full py-4 flex justify-center items-center flex-col gap-2">
+          {/* Project item */}
           <ProjectItem
-            backImg={SushiProject}
-            linkDemo="https://sushilotte.netlify.app"
-            linkCode="https://github.com/Osimitzu/sushiVanillaProject"
+            // key={index}
+            projectName={projects[index].name}
+            backImg={projects[index].backImg}
+            linkDemo={projects[index].linkDemo}
+            linkCode={projects[index].linkCode}
+            prevFunction={prevProject}
+            nextFunction={nextProject}
+            // slides={projects}
+            // goToSlide={slideDotsF}
           />
-          <ProjectItem
-            backImg={SushiProject}
-            linkDemo="https://sushilotte.netlify.app"
-            linkCode="https://github.com/Osimitzu/sushiVanillaProject"
-          />
+          <div className="flex top-4 justify-center py-2">
+            {projects.map((project, projectIndex) => (
+              <div
+                key={projectIndex}
+                onClick={() => goToSlide(projectIndex)}
+                className={`text-3xl cursor-pointer ${
+                  index === projectIndex ? "text-pink-600" : ""
+                }`}
+              >
+                <RxDotFilled className="transition duration-300 ease-in-out hover:text-pink-600" />
+              </div>
+            ))}
+          </div>
         </section>
       </section>
     </main>

@@ -18,10 +18,6 @@ const Home = () => {
           Full Stack Developer
         </h2>
         <p className="w-full text-[#8892b0] py-2">
-          {/* I'm currently studying Software Development at the Instituto de
-          Estudios Universitarios. I have recently completed the full-stack web
-          development boot-camp at Academlo and obtained my Google IT Support
-          certification. */}
           I'm studying Software Development at Instituto de Estudios
           Universitarios. I completed a full-stack web development bootcamp at
           Academlo and obtained my Google IT Support certification.
@@ -30,8 +26,8 @@ const Home = () => {
           <Link to="work" smooth={true} duration={500}>
             <button className="group text-white border-2 px-6 py-3 flex items-center hover:bg-pink-600 hover:border-pink-600">
               View Work
-              <span className="group-hover:rotate-90 duration-300">
-                <HiArrowNarrowRight className="ml-4" />
+              <span className="rotate-90 lg:rotate-0 lg:group-hover:rotate-90 duration-300">
+                <HiArrowNarrowRight className="lg:ml-4" />
               </span>
             </button>
           </Link>

@@ -1,6 +1,6 @@
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Home from "./components/Home";
+import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
@@ -10,7 +10,7 @@ function App() {
     <main>
       <Navbar />
       <section name="home" className="w-full h-screen pt-20 bg-red-400">
-        <Home />
+        <Hero />
       </section>
       {/* <section name="about" className="w-full h-screen pt-20 bg-red-400">
         <About />
