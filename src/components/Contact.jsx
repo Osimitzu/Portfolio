@@ -40,7 +40,7 @@ const Contact = () => {
           // rows="10"
           placeholder="Message"
           required
-          className="bg-[#ccd6f6] p-2"
+          className="bg-[#ccd6f6] p-2 resize-none h-20"
         ></textarea>
         <div className="flex justify-center items-center w-full h-14">
           <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 flex justify-center items-center w-24 border-pink-600 lg:border-white">
