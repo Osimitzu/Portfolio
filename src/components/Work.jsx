@@ -7,6 +7,7 @@ import InvitationProject from "../assets/InvitationProject.png";
 import FortuneProject from "../assets/FortuneProject.png";
 import WeatherProject from "../assets/WeatherProject.png";
 import EcommerceProject from "../assets/EcommerceProject.png";
+import AstroProject from "../assets/AstroProject.png";
 
 const Work = () => {
   const [index, setIndex] = useState(0);
@@ -41,6 +42,12 @@ const Work = () => {
       backImg: FortuneProject,
       linkDemo: "https://osimitzu-fortune.netlify.app",
       linkCode: "https://github.com/Osimitzu/Fortune-Cookie",
+    },
+    {
+      name: "Astro Landing",
+      backImg: AstroProject,
+      linkDemo: "https://osimitzu-astro-landing.netlify.app",
+      linkCode: "https://github.com/Osimitzu/astro-landing-page",
     },
   ];
 
