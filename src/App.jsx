@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
+import Footer from "./components/Footer";
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -54,6 +55,9 @@ function App() {
       </section>
       <section name="contact" className="w-full h-screen pt-20">
         <Contact language={lang} />
+      </section>
+      <section className="lg:hidden w-full h-8 flex">
+        <Footer />
       </section>
     </main>
   );

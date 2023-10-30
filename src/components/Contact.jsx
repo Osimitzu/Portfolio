@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 
 const Contact = ({ language }) => {
   return (
@@ -50,9 +50,9 @@ const Contact = ({ language }) => {
           </button>
         </div>
       </form>
-      <div className="w-full lg:hidden">
+      {/* <div className="w-full lg:hidden">
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 };
