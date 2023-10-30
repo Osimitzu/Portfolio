@@ -4,13 +4,13 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-[#0a192f]">
+    <div className="w-full">
       <ul className="flex flex-row justify-center items-center gap-3">
         <li>
           <a
             href="https://www.linkedin.com/in/osiriscontreras97/"
             target="_blank"
-            className="flex justify-center items-center w-full text-pink-600"
+            className="flex justify-center items-center w-full"
           >
             <FaLinkedin size={30} />
           </a>
@@ -19,7 +19,7 @@ const Footer = () => {
           <a
             href="https://github.com/Osimitzu"
             target="_blank"
-            className="flex justify-center items-center w-full text-pink-600"
+            className="flex justify-center items-center w-full"
           >
             <FaGithub size={30} />
           </a>
@@ -28,7 +28,7 @@ const Footer = () => {
           <a
             href="mailto:angel_aocc@hotmail.com"
             target="_blank"
-            className="flex justify-center items-center w-full text-pink-600"
+            className="flex justify-center items-center w-full"
           >
             <HiOutlineMail size={30} />
           </a>

@@ -2,26 +2,31 @@ import { React, useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { CiLight } from "react-icons/ci";
+import { MdOutlineDarkMode } from "react-icons/md";
+import { SiDocusaurus } from "react-icons/si";
+import { GiSombrero } from "react-icons/gi";
 import Logo from "../assets/logoGorilla.png";
 import { Link } from "react-scroll";
 
-const Navbar = () => {
+const Navbar = ({ darkMode, themeParam, languageMode, language }) => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-20 flex justify-between px-4 items-center bg-[#0a192f] text-gray-300">
-      <div>
+    <div className="fixed w-full h-20 flex justify-between px-4 items-center bg-main50 dark:bg-main950">
+      <div className="z-50">
         <a href="/">
-          <img src={Logo} alt="logoImage" style={{ width: "50px" }} />
+          <img src="/logo2.jpg" alt="logoImage" className="w-12 rounded-full" />
         </a>
       </div>
+
       {/* menu */}
 
-      <ul className="hidden md:flex text-xl">
+      <ul className="hidden lg:flex text-xl">
         <Link to="home" smooth={true} duration={500}>
-          <li className="hover:text-pink-600 transition-all duration-300">
-            Home
+          <li className="hover:text-text500 dark:hover:text-main400 transition-all duration-300">
+            {language === "english" ? "HOME" : "INICIO"}
           </li>
         </Link>
         {/* <li>
@@ -30,24 +35,48 @@ const Navbar = () => {
           </Link>
         </li> */}
         <Link to="skills" smooth={true} duration={500}>
-          <li className="hover:text-pink-600 transition-all duration-300">
-            Skills
+          <li className="hover:text-text500 dark:hover:text-main400 transition-all duration-300">
+            {language === "english" ? "SKILLS" : "HABILIDADES"}
           </li>
         </Link>
         <Link to="work" smooth={true} duration={500}>
-          <li className="hover:text-pink-600 transition-all duration-300">
-            Work
+          <li className="hover:text-text500 dark:hover:text-main400 transition-all duration-300">
+            {language === "english" ? "WORK" : "PROYECTOS"}
           </li>
         </Link>
         <Link to="contact" smooth={true} duration={500}>
-          <li className="hover:text-pink-600 transition-all duration-300">
-            Contact
+          <li className="hover:text-text500 dark:hover:text-main400 transition-all duration-300">
+            {language === "english" ? "CONTACT" : "CONTACTO"}
           </li>
         </Link>
       </ul>
+      <div className="flex gap-5">
+        {/* dark mode */}
+        <div
+          onClick={darkMode}
+          className="cursor-pointer hover:text-text500 dark:hover:text-main400 transition-all duration-300"
+        >
+          {themeParam === "dark" ? (
+            <MdOutlineDarkMode size={35} />
+          ) : (
+            <CiLight size={35} />
+          )}
+        </div>
+        {/* language mode */}
+        <div
+          onClick={languageMode}
+          className="cursor-pointer hover:text-text500 dark:hover:text-main400 transition-all duration-300"
+        >
+          {language === "english" ? (
+            <SiDocusaurus size={35} />
+          ) : (
+            <GiSombrero size={35} />
+          )}
+        </div>
+      </div>
 
       {/* hamburguer */}
-      <div onClick={handleClick} className="md:hidden z-50">
+      <div onClick={handleClick} className="lg:hidden z-50">
         {!nav ? <FaBars size={35} /> : <FaTimes size={35} />}
       </div>
 
@@ -56,11 +85,13 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "fixed top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center gap-6 overflow-hidden"
+            : "fixed top-0 left-0 w-full h-screen bg-main50 dark:bg-main950 flex flex-col justify-center items-center gap-6 overflow-hidden"
         }
       >
         <Link onClick={handleClick} to="home" smooth={true} duration={500}>
-          <li className="py-4 text-4xl">Home</li>
+          <li className="py-4 text-4xl">
+            {language === "english" ? "HOME" : "INICIO"}
+          </li>
         </Link>
         {/* <li className="py-4 text-4xl">
           <Link onClick={handleClick} to="about" smooth={true} duration={500}>
@@ -68,24 +99,30 @@ const Navbar = () => {
           </Link>
         </li> */}
         <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
-          <li className="py-4 text-4xl">Skills</li>
+          <li className="py-4 text-4xl">
+            {language === "english" ? "SKILLS" : "HABILIDADES"}
+          </li>
         </Link>
         <Link onClick={handleClick} to="work" smooth={true} duration={500}>
-          <li className="py-4 text-4xl">Work</li>
+          <li className="py-4 text-4xl">
+            {language === "english" ? "WORK" : "PROYECTOS"}
+          </li>
         </Link>
         <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
-          <li className="py-4 text-4xl">Contact</li>
+          <li className="py-4 text-4xl">
+            {language === "english" ? "CONTACT" : "CONTACTO"}
+          </li>
         </Link>
       </ul>
 
       {/* social icons */}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
+      <div className="hidden lg:flex fixed flex-col top-[35%] left-0 text-main50">
         <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#4285F4]">
             <a
               href="https://www.linkedin.com/in/osiriscontreras97/"
               target="_blank"
-              className="flex justify-between items-center w-full h-full text-gray-300"
+              className="flex justify-between items-center w-full h-full"
             >
               Linkedin <FaLinkedin size={30} />
             </a>
@@ -94,25 +131,25 @@ const Navbar = () => {
             <a
               href="https://github.com/Osimitzu"
               target="_blank"
-              className="flex justify-between items-center w-full h-full text-gray-300"
+              className="flex justify-between items-center w-full h-full"
             >
               Github <FaGithub size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#DB4437]">
             <a
               href="mailto:angel_aocc@hotmail.com"
               target="_blank"
-              className="flex justify-between items-center w-full h-full text-gray-300"
+              className="flex justify-between items-center w-full h-full"
             >
               Email <HiOutlineMail size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0F9D58]">
             <a
               href="/Osiris-resume.pdf"
               download="Osiris-resume.pdf"
-              className="flex justify-between items-center w-full h-full text-gray-300"
+              className="flex justify-between items-center w-full h-full"
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>

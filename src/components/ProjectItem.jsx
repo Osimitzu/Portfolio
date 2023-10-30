@@ -10,9 +10,10 @@ const ProjectItem = ({
 }) => {
   return (
     <div
-      style={{ backgroundImage: `url(${backImg})` }}
-      className="w-52 md:w-96 lg:w-[36rem] h-28 md:h-52 lg:h-[16rem] shadow-lg shadow-[#040c16] group rounded-md flex justify-center items-center content-div transition-all duration-300"
+      // style={{ backgroundImage: `url(${backImg})` }}
+      className="w-52 md:w-96 lg:w-[30rem] h-fit shadow-lg shadow-[#040c16] group rounded-md flex justify-center items-center content-div transition-all duration-300"
     >
+      <img src={backImg} alt="projectImage" />
       {/* Mobile effects */}
       {/* <div className="lg:hidden opacity-1 text-center w-full h-full">
         <div className="w-full h-full grid grid-cols-1 items-center">
@@ -47,7 +48,7 @@ const ProjectItem = ({
       {/* Mobile effects end */}
       {/* ----------------------------------------------------------- */}
       {/* Hover Effects */}
-      <div className="hidden lg:block opacity-0 group-hover:opacity-100 text-center relative w-full h-full transition-all duration-300">
+      {/* <div className="hidden lg:block opacity-0 group-hover:opacity-100 text-center relative w-full h-full transition-all duration-300">
         <h2 className="text-xl font-bold text-black/80 absolute top-0 mt-2 w-full">
           {projectName}
         </h2>
@@ -62,15 +63,15 @@ const ProjectItem = ({
               Code
             </button>
           </a>
-        </div>
-        {/* Buttons to change slider */}
-        <div className="absolute top-[50%] -translate-x-0 -translate-y-[50%] left-5 text-2xl rounded-full p-2 bg-black/60 text-white cursor-pointer">
+        </div> */}
+      {/* Buttons to change slider */}
+      {/* <div className="absolute top-[50%] -translate-x-0 -translate-y-[50%] left-5 text-2xl rounded-full p-2 bg-black/60 text-white cursor-pointer">
           <BsChevronCompactLeft size={30} onClick={prevFunction} />
         </div>
         <div className="absolute top-[50%] -translate-x-0 -translate-y-[50%] right-5 text-2xl rounded-full p-2 bg-black/60 text-white cursor-pointer">
           <BsChevronCompactRight size={30} onClick={nextFunction} />
         </div>
-      </div>
+      </div> */}
       {/* Hover Effects End */}
     </div>
   );

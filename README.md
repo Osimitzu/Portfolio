@@ -17,3 +17,6 @@ Icon:
 - Agregar a todas las imagenes loading="lazy"
 - Agregar a los links con target_blank rel="noreferrer"
 - revisar rel="nofollow noopener"
+- Crear mockups con shots.so
+
+- Actualizar meta social preview al finalizar todo.

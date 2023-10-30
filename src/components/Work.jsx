@@ -9,7 +9,7 @@ import WeatherProject from "../assets/WeatherProject.png";
 import EcommerceProject from "../assets/EcommerceProject.png";
 import AstroProject from "../assets/AstroProject.png";
 
-const Work = () => {
+const Work = ({ language }) => {
   const [index, setIndex] = useState(0);
 
   const projects = [
@@ -72,25 +72,33 @@ const Work = () => {
   return (
     <main
       // name="work"
-      className="w-full h-full bg-[#0a192f] text-gray-300 px-4 md:px-20 flex justify-center items-center"
+      className="w-full h-full text-gray-300 px-4 lg:px-20 flex justify-center items-center"
     >
       <section className="flex flex-col justify-center items-center w-full">
-        <section className="w-full lg:mb-4">
-          <p className="text-2xl md:text-4xl font-bold inline border-b-4 border-pink-600">
-            Work
+        <section className="w-full mb-11 md:mb-8 lg:mb-0">
+          <p className="text-2xl md:text-4xl font-bold inline border-b-4 border-text500 dark:border-main400 transition-all duration-300">
+            {language === "english" ? "Work" : "Proyectos"}
           </p>
-          <p className="py-4">Check out some of my recent work.</p>
+          <p className="pt-4 transition-all duration-300">
+            {language === "english"
+              ? "Check out some of my recent work."
+              : "Echa un vistazo a algunos de mis proyectos recientes."}
+          </p>
         </section>
 
         {/* Card container */}
-        <section className="w-full py-4 flex justify-center items-center flex-col gap-2 text-center transition-all duration-300">
-          <h2 className="text-xl font-bol w-full lg:hidden transition-all duration-300">
+        <section className="w-full py-4 lg:py-0 flex justify-center items-center flex-col gap-2 text-center transition-all duration-300">
+          <h2 className="text-2xl font-bol w-full transition-all duration-300">
             {projects[index].name}
           </h2>
-          <div className="flex justify-between items-center transition-all duration-300">
-            <div className="w-fit h-fit rounded-full p-2 bg-black/60 text-white cursor-pointer lg:hidden">
-              <BsChevronCompactLeft size={10} onClick={prevProject} />
+          <div className="w-full flex justify-center items-center transition-all duration-300">
+            <div
+              onClick={prevProject}
+              className="w-fit h-[6.5rem] md:h-48 lg:h-[15rem]  flex items-center p-2 bg-main50 dark:bg-main950 cursor-pointer transition-all duration-300"
+            >
+              <BsChevronCompactLeft size={25} />
             </div>
+
             {/* Project item */}
             <ProjectItem
               // key={index}
@@ -104,34 +112,38 @@ const Work = () => {
               // goToSlide={slideDotsF}
             />
             {/* Project item END */}
-            <div className="w-fit h-fit rounded-full p-2 bg-black/60 text-white cursor-pointer lg:hidden">
-              <BsChevronCompactRight size={10} onClick={nextProject} />
+
+            <div
+              onClick={nextProject}
+              className="w-fit h-[6.5rem] md:h-48 lg:h-[15rem]  flex items-center p-2 bg-main50 dark:bg-main950 cursor-pointer transition-all duration-300"
+            >
+              <BsChevronCompactRight size={25} />
             </div>
           </div>
           {/* Dots to slider */}
-          <div className="flex top-4 justify-center py-1">
+          <div className="flex justify-center">
             {projects.map((project, projectIndex) => (
               <div
                 key={projectIndex}
                 onClick={() => goToSlide(projectIndex)}
                 className={`text-3xl cursor-pointer ${
-                  index === projectIndex ? "text-pink-600" : ""
+                  index === projectIndex ? "text-text500 dark:text-main400" : ""
                 }`}
               >
-                <RxDotFilled className="transition duration-300 ease-in-out hover:text-pink-600" />
+                <RxDotFilled className="transition duration-300 ease-in-out hover:text-text500 dark:hover:text-main400" />
               </div>
             ))}
           </div>
           {/* Dots to slider END */}
-          <div className="text-center flex justify-center w-full h-fit items-center gap-4 lg:hidden">
+          <div className="text-center flex justify-center w-full h-fit items-center gap-4">
             <a href={projects[index].linkDemo} target="_blank">
-              <button className="text-center rounded-lg px-2 py-1 m-1 bg-black/60 text-white font-bold text-base">
-                Demo
+              <button className="border-2 flex justify-center items-center w-20 transition-all duration-300 px-6 py-2 hover:bg-text500 hover:border-text500 border-text500 lg:border-main950 dark:hover:bg-main900 dark:hover:border-main900 dark:border-main900 dark:lg:border-main50 text-lg">
+                {language === "english" ? "Demo" : "Demo"}
               </button>
             </a>
             <a href={projects[index].linkCode} target="_blank">
-              <button className="text-center rounded-lg px-2 py-1 m-1 bg-black/60 text-white font-bold text-base">
-                Code
+              <button className="border-2 flex justify-center items-center w-20 transition-all duration-300 px-6 py-2 hover:bg-text500 hover:border-text500 border-text500 lg:border-main950 dark:hover:bg-main900 dark:hover:border-main900 dark:border-main900 dark:lg:border-main50 text-lg">
+                {language === "english" ? "Code" : "Code"}
               </button>
             </a>
           </div>

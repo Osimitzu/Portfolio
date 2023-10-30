@@ -14,19 +14,23 @@ import PostgresqlLogo from "../assets/postgreSQL.png";
 import SwaggerLogo from "../assets/swaggerLogo.png";
 import GitLogo from "../assets/git.png";
 
-const Skills = () => {
+const Skills = ({ language }) => {
   return (
     <div
       // name="skills"
-      className="w-full h-full bg-[#0a192f] text-gray-300 px-4 md:px-20 flex justify-center items-center"
+      className="w-full h-full text-gray-300 px-4 lg:px-20 flex justify-center items-center"
     >
       {/* Container */}
       <div className="w-full flex flex-col justify-center items-center">
         <div className="w-full mb-12 md:mb-1">
-          <p className="text-2xl md:text-4xl font-bold inline border-b-4 border-pink-600">
-            Skills
+          <p className="text-2xl md:text-4xl font-bold inline border-b-4 border-text500 dark:border-main400 transition-all duration-300">
+            {language === "english" ? "Skills" : "Habilidades"}
           </p>
-          <p className="py-4">These are the technologies I work with.</p>
+          <p className="py-4 transition-all duration-300">
+            {language === "english"
+              ? "These are the technologies I work with."
+              : "Estas son las tecnologías con las que trabajo."}
+          </p>
         </div>
         {/* skills container */}
         <div className="w-full grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 text-center gap-2">
