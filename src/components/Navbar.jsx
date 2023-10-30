@@ -6,7 +6,8 @@ import { CiLight } from "react-icons/ci";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { SiDocusaurus } from "react-icons/si";
 import { GiSombrero } from "react-icons/gi";
-import Logo from "../assets/logoGorilla.png";
+import LogoLight from "../assets/logoLight.png";
+import LogoDark from "../assets/logoDark.png";
 import { Link } from "react-scroll";
 
 const Navbar = ({ darkMode, themeParam, languageMode, language }) => {
@@ -14,10 +15,14 @@ const Navbar = ({ darkMode, themeParam, languageMode, language }) => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-20 flex justify-between px-4 items-center bg-main50 dark:bg-main950">
+    <div className="fixed w-full h-20 flex justify-between px-4 items-center bg-main50 dark:bg-main950 transition-all duration-300">
       <div className="z-50">
         <a href="/">
-          <img src="/logo2.jpg" alt="logoImage" className="w-12 rounded-full" />
+          <img
+            src={themeParam === "dark" ? LogoDark : LogoLight}
+            alt="logoImage"
+            className="w-16 rounded-full"
+          />
         </a>
       </div>
 
