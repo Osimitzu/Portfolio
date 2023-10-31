@@ -8,6 +8,7 @@ import FortuneProject from "../assets/FortuneProject.png";
 import WeatherProject from "../assets/WeatherProject.png";
 import EcommerceProject from "../assets/EcommerceProject.png";
 import AstroProject from "../assets/AstroProject.png";
+import PortfolioProject from "../assets/portfolioProject.png";
 
 const Work = ({ language }) => {
   const [index, setIndex] = useState(0);
@@ -48,6 +49,12 @@ const Work = ({ language }) => {
       backImg: AstroProject,
       linkDemo: "https://osimitzu-astro-landing.netlify.app",
       linkCode: "https://github.com/Osimitzu/astro-landing-page",
+    },
+    {
+      name: "Portfolio",
+      backImg: PortfolioProject,
+      linkDemo: "/",
+      linkCode: "https://github.com/Osimitzu/Portfolio",
     },
   ];
 
