@@ -20,7 +20,7 @@ const Contact = ({ language }) => {
 
       <form
         method="POST"
-        action="https://getform.io/f/6f4fc7f5-3f75-4d67-9dcd-2410fbed0c8a"
+        action="https://getform.io/f/56d86ec6-aa8f-41cf-92b6-3d9febc91646"
         className="flex flex-col max-w-[600px] w-full"
       >
         <input
@@ -28,21 +28,21 @@ const Contact = ({ language }) => {
           placeholder={language === "english" ? "Name" : "Nombre"}
           name="name"
           required
-          className="bg-main950 dark:bg-main50 transition-colors duration-300 p-2"
+          className="bg-main950 dark:bg-main50 text-main50 dark:text-main950 transition-colors duration-300 p-2"
         />
         <input
           type="email"
           placeholder={language === "english" ? "Email" : "Correo"}
           name="email"
           required
-          className="my-4 p-2 bg-main950 dark:bg-main50 transition-colors duration-300"
+          className="my-4 p-2 bg-main950 dark:bg-main50 text-main50 dark:text-main950 transition-colors duration-300"
         />
         <textarea
           name="message"
           // rows="10"
           placeholder={language === "english" ? "Message" : "Mensaje"}
           required
-          className="bg-main950 dark:bg-main50 transition-colors duration-300 p-2 resize-none h-20"
+          className="bg-main950 dark:bg-main50 text-main50 dark:text-main950 transition-colors duration-300 p-2 resize-none h-20"
         ></textarea>
         <div className="flex justify-center items-center w-full h-14 my-4">
           <button className="border-2 flex justify-center items-center w-28 transition-all duration-300 px-6 py-2 hover:bg-text500 hover:border-text500 border-text500 lg:border-main950 dark:hover:bg-main900 dark:hover:border-main900 dark:border-main900 dark:lg:border-main50 text-lg">
