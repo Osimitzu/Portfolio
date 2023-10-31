@@ -15,4 +15,4 @@
 - [*] Agregar a los links con target_blank rel="noreferrer"
 - [*] revisar rel="nofollow noopener"
 - [*] update resume
-- [] Actualizar por correo HOSTING de todos lados incluyendo el form
+- [*] Actualizar por correo HOSTING de todos lados incluyendo el form
