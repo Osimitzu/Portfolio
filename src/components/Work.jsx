@@ -53,7 +53,7 @@ const Work = ({ language }) => {
     {
       name: "Portfolio",
       backImg: PortfolioProject,
-      linkDemo: "/",
+      linkDemo: "https://osiriscontreras.com",
       linkCode: "https://github.com/Osimitzu/Portfolio",
     },
   ];
