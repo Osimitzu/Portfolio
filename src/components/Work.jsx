@@ -136,12 +136,20 @@ const Work = ({ language }) => {
           </div>
           {/* Dots to slider END */}
           <div className="text-center flex justify-center w-full h-fit items-center gap-4">
-            <a href={projects[index].linkDemo} target="_blank" rel="noreferrer">
+            <a
+              href={projects[index].linkDemo}
+              target="_blank"
+              rel="noreferrer noopener nofollow"
+            >
               <button className="border-2 flex justify-center items-center w-20 transition-all duration-300 px-6 py-2 hover:bg-text500 hover:border-text500 border-text500 lg:border-main950 dark:hover:bg-main900 dark:hover:border-main900 dark:border-main900 dark:lg:border-main50 text-lg">
                 {language === "english" ? "Demo" : "Demo"}
               </button>
             </a>
-            <a href={projects[index].linkCode} target="_blank" rel="noreferrer">
+            <a
+              href={projects[index].linkCode}
+              target="_blank"
+              rel="noreferrer noopener nofollow"
+            >
               <button className="border-2 flex justify-center items-center w-20 transition-all duration-300 px-6 py-2 hover:bg-text500 hover:border-text500 border-text500 lg:border-main950 dark:hover:bg-main900 dark:hover:border-main900 dark:border-main900 dark:lg:border-main50 text-lg">
                 {language === "english" ? "Code" : "Code"}
               </button>

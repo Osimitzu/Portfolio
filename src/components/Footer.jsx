@@ -10,7 +10,7 @@ const Footer = () => {
           <a
             href="https://www.linkedin.com/in/osiriscontreras97/"
             target="_blank"
-            rel="noreferrer"
+            rel="noreferrer noopener nofollow"
             className="flex justify-center items-center w-full"
           >
             <FaLinkedin size={30} />
@@ -20,7 +20,7 @@ const Footer = () => {
           <a
             href="https://github.com/Osimitzu"
             target="_blank"
-            rel="noreferrer"
+            rel="noreferrer noopener nofollow"
             className="flex justify-center items-center w-full"
           >
             <FaGithub size={30} />
@@ -30,7 +30,7 @@ const Footer = () => {
           <a
             href="mailto:angel_aocc@hotmail.com"
             target="_blank"
-            rel="noreferrer"
+            rel="noreferrer noopener nofollow"
             className="flex justify-center items-center w-full"
           >
             <HiOutlineMail size={30} />
