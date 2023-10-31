@@ -21,6 +21,7 @@ const Navbar = ({ darkMode, themeParam, languageMode, language }) => {
           <img
             src={themeParam === "dark" ? LogoDark : LogoLight}
             alt="logoImage"
+            loading="lazy"
             className="w-16 rounded-full"
           />
         </a>
@@ -143,7 +144,7 @@ const Navbar = ({ darkMode, themeParam, languageMode, language }) => {
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#DB4437]">
             <a
-              href="mailto:angel_aocc@hotmail.com"
+              href="mailto:angel@osiriscontreras.com"
               target="_blank"
               className="flex justify-between items-center w-full h-full"
             >

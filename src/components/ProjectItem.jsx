@@ -13,7 +13,7 @@ const ProjectItem = ({
       // style={{ backgroundImage: `url(${backImg})` }}
       className="w-52 md:w-96 lg:w-[30rem] h-fit shadow-lg shadow-[#040c16] group rounded-md flex justify-center items-center content-div transition-all duration-300"
     >
-      <img src={backImg} alt="projectImage" />
+      <img src={backImg} alt="projectImage" loading="lazy" />
       {/* Mobile effects */}
       {/* <div className="lg:hidden opacity-1 text-center w-full h-full">
         <div className="w-full h-full grid grid-cols-1 items-center">

@@ -35,15 +35,26 @@ const Skills = ({ language }) => {
         {/* skills container */}
         <div className="w-full grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 text-center gap-2">
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-300 flex justify-center items-center flex-col">
-            <img src={HTMLLogo} alt="HTML icon" className="w-6 md:w-20" />
+            <img
+              loading="lazy"
+              src={HTMLLogo}
+              alt="HTML icon"
+              className="w-6 md:w-20"
+            />
             <p className="py-1 text-xs">HTML</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-300 flex justify-center items-center flex-col">
-            <img src={CSSLogo} alt="CSS icon" className="w-6 md:w-20" />
+            <img
+              loading="lazy"
+              src={CSSLogo}
+              alt="CSS icon"
+              className="w-6 md:w-20"
+            />
             <p className="py-1 text-xs">CSS</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-300 flex justify-center items-center flex-col">
             <img
+              loading="lazy"
               src={JavaScriptLogo}
               alt="JavaScript icon"
               className="w-6 md:w-20"
@@ -51,11 +62,17 @@ const Skills = ({ language }) => {
             <p className="py-1 text-xs">JavaScript</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-300 flex justify-center items-center flex-col">
-            <img src={ReactLogo} alt="React icon" className="w-6 md:w-20" />
+            <img
+              loading="lazy"
+              src={ReactLogo}
+              alt="React icon"
+              className="w-6 md:w-20"
+            />
             <p className="py-1 text-xs">React</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-300 flex justify-center items-center flex-col">
             <img
+              loading="lazy"
               src={TailwindLogo}
               alt="Tailwind icon"
               className="w-6 md:w-20"
@@ -64,6 +81,7 @@ const Skills = ({ language }) => {
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-300 flex justify-center items-center flex-col">
             <img
+              loading="lazy"
               src={BootstrapLogo}
               alt="Bootstrap icon"
               className="w-6 md:w-20"
@@ -71,11 +89,17 @@ const Skills = ({ language }) => {
             <p className="py-1 text-xs">Bootstrap</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-300 flex justify-center items-center flex-col">
-            <img src={NodeLogo} alt="Node.js icon" className="w-6 md:w-20" />
+            <img
+              loading="lazy"
+              src={NodeLogo}
+              alt="Node.js icon"
+              className="w-6 md:w-20"
+            />
             <p className="py-1 text-xs">Node.js</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-300 flex justify-center items-center flex-col">
             <img
+              loading="lazy"
               src={ExpressLogo}
               alt="Express.js icon"
               className="w-6 md:w-20"
@@ -84,6 +108,7 @@ const Skills = ({ language }) => {
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-300 flex justify-center items-center flex-col">
             <img
+              loading="lazy"
               src={PostgresqlLogo}
               alt="PostgreSQL icon"
               className="w-6 md:w-20"
@@ -92,6 +117,7 @@ const Skills = ({ language }) => {
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-300 flex justify-center items-center flex-col">
             <img
+              loading="lazy"
               src={SequelizeLogo}
               alt="Sequelize icon"
               className="w-6 md:w-20"
@@ -99,11 +125,21 @@ const Skills = ({ language }) => {
             <p className="py-1 text-xs">Sequelize</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-300 flex justify-center items-center flex-col">
-            <img src={SwaggerLogo} alt="Swagger icon" className="w-6 md:w-20" />
+            <img
+              loading="lazy"
+              src={SwaggerLogo}
+              alt="Swagger icon"
+              className="w-6 md:w-20"
+            />
             <p className="py-1 text-xs">Swagger</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-300 flex justify-center items-center flex-col">
-            <img src={GitLogo} alt="Git icon" className="w-6 md:w-20" />
+            <img
+              loading="lazy"
+              src={GitLogo}
+              alt="Git icon"
+              className="w-6 md:w-20"
+            />
             <p className="py-1 text-xs">Git</p>
           </div>
         </div>
