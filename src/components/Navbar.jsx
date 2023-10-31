@@ -128,6 +128,7 @@ const Navbar = ({ darkMode, themeParam, languageMode, language }) => {
             <a
               href="https://www.linkedin.com/in/osiriscontreras97/"
               target="_blank"
+              rel="noreferrer"
               className="flex justify-between items-center w-full h-full"
             >
               Linkedin <FaLinkedin size={30} />
@@ -137,6 +138,7 @@ const Navbar = ({ darkMode, themeParam, languageMode, language }) => {
             <a
               href="https://github.com/Osimitzu"
               target="_blank"
+              rel="noreferrer"
               className="flex justify-between items-center w-full h-full"
             >
               Github <FaGithub size={30} />
@@ -146,6 +148,7 @@ const Navbar = ({ darkMode, themeParam, languageMode, language }) => {
             <a
               href="mailto:angel@osiriscontreras.com"
               target="_blank"
+              rel="noreferrer"
               className="flex justify-between items-center w-full h-full"
             >
               Email <HiOutlineMail size={30} />
@@ -157,7 +160,8 @@ const Navbar = ({ darkMode, themeParam, languageMode, language }) => {
               download="Osiris-resume.pdf"
               className="flex justify-between items-center w-full h-full"
             >
-              Resume <BsFillPersonLinesFill size={30} />
+              Resume
+              <BsFillPersonLinesFill size={30} />
             </a>
           </li>
         </ul>
