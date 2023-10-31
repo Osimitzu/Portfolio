@@ -44,7 +44,7 @@ const Contact = ({ language }) => {
           required
           className="bg-main950 dark:bg-main50 transition-colors duration-300 p-2 resize-none h-20"
         ></textarea>
-        <div className="flex justify-center items-center w-full h-14">
+        <div className="flex justify-center items-center w-full h-14 my-4">
           <button className="border-2 flex justify-center items-center w-28 transition-all duration-300 px-6 py-2 hover:bg-text500 hover:border-text500 border-text500 lg:border-main950 dark:hover:bg-main900 dark:hover:border-main900 dark:border-main900 dark:lg:border-main50 text-lg">
             {language === "english" ? "Submit" : "Enviar"}
           </button>

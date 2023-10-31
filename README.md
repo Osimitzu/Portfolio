@@ -12,6 +12,6 @@
 - [*] Agregar a todas las imagenes loading="lazy"
 - [*] Crear mockups con shots.so
 - [*] Actualizar meta social preview al finalizar todo.
-- [] Agregar a los links con target_blank rel="noreferrer"
+- [*] Agregar a los links con target_blank rel="noreferrer"
 - [] revisar rel="nofollow noopener"
 - [] Actualizar por correo HOSTING de todos lados incluyendo el form
