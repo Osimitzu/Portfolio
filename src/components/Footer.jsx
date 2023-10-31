@@ -4,7 +4,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="w-full">
+    <div className="w-full flex flex-col items-center">
       <ul className="flex flex-row justify-center items-center gap-3">
         <li>
           <a
@@ -43,6 +43,7 @@ const Footer = () => {
           </a>
         </li> */}
       </ul>
+      <p>&copy; 2023</p>
     </div>
   );
 };

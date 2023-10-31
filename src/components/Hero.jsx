@@ -9,22 +9,24 @@ const Home = ({ language }) => {
       className="w-full h-full px-4 lg:px-20 flex justify-center items-center"
     >
       {/* Container */}
-      <div className="flex flex-col justify-center items-center w-full text-left">
+      <div className="flex flex-col justify-center items-center w-full text-center gap-10">
         <p className="text-text500 dark:text-main400  w-full text-lg transition-all duration-300">
           {language === "english" ? "Hi, my name is" : "Hola, mi nombre es"}
         </p>
-        <h1 className="w-full text-3xl md:text-6xl font-bold py-2 transition-all duration-300">
-          Osiris Contreras
-        </h1>
-        <h2 className="w-full text-3xl md:text-6xl font-bold text-text700  dark:text-main900 transition-all duration-300">
-          {language === "english"
-            ? "Full Stack Developer"
-            : "Desarrollador Web Full Stack"}
-        </h2>
+        <div className="w-full">
+          <h1 className="w-full text-3xl md:text-6xl font-bold transition-all duration-300 lett tracking-tighter">
+            Osiris Contreras
+          </h1>
+          <h2 className="w-full text-3xl md:text-6xl font-bold text-text700  dark:text-main900 transition-all duration-300 tracking-tight">
+            {language === "english"
+              ? "Full Stack Developer"
+              : "Desarrollador Web Full Stack"}
+          </h2>
+        </div>
         <p className="w-full py-2 transition-all duration-300">
           {language === "english"
-            ? "I'm studying Software Development at Instituto de Estudios Universitarios. I completed a full-stack web development bootcamp at Academlo and obtained my Google IT Support certification."
-            : "Estudio Desarrollo de Software en el Instituto de Estudios Universitarios. Completé un bootcamp de desarrollo web full-stack en Academlo y obtuve mi certificación de Google IT Support."}
+            ? "Sometimes I get paid to make websites."
+            : "A veces me pagan por crear sitios web."}
         </p>
         <div className="w-full flex justify-center items-center lg:py-2">
           <Link to="work" smooth={true} duration={500}>

@@ -56,8 +56,11 @@ function App() {
       <section name="contact" className="w-full h-screen pt-20">
         <Contact language={lang} />
       </section>
-      <section className="lg:hidden w-full h-8 flex">
+      <section className="lg:hidden w-full h-12 flex">
         <Footer />
+      </section>
+      <section className="hidden lg:flex w-full h-8 items-center justify-center">
+        <p>&copy; 2023</p>
       </section>
     </main>
   );

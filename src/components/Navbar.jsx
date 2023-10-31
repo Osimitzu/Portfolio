@@ -6,7 +6,7 @@ import { CiLight } from "react-icons/ci";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { SiDocusaurus } from "react-icons/si";
 import { GiSombrero } from "react-icons/gi";
-import LogoLight from "../assets/logoLight.png";
+import LogoLight from "../assets/logoLight2.png";
 import LogoDark from "../assets/logoDark.png";
 import { Link } from "react-scroll";
 
