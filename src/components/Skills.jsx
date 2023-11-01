@@ -1,18 +1,18 @@
 import React from "react";
 
-import JavaScriptLogo from "../assets/javascript.png";
-import HTMLLogo from "../assets/html.png";
-import CSSLogo from "../assets/css.png";
-import TailwindLogo from "../assets/tailwind.png";
-import ReactLogo from "../assets/react.png";
-import BootstrapLogo from "../assets/bootstrap.png";
-import NodeLogo from "../assets/node.png";
-import ExpressLogo from "../assets/expressjs.png";
-import SequelizeLogo from "../assets/sequelize.png";
-// import SQLLogo from "../assets/sql.png";
-import PostgresqlLogo from "../assets/postgreSQL.png";
-import SwaggerLogo from "../assets/swaggerLogo.png";
-import GitLogo from "../assets/git.png";
+import JavaScriptLogo from "../assets/javascript.webp";
+import HTMLLogo from "../assets/html.webp";
+import CSSLogo from "../assets/css.webp";
+import TailwindLogo from "../assets/tailwind.webp";
+import ReactLogo from "../assets/react.webp";
+import BootstrapLogo from "../assets/bootstrap.webp";
+import NodeLogo from "../assets/node.webp";
+import ExpressLogo from "../assets/expressjs.webp";
+import SequelizeLogo from "../assets/sequelize.webp";
+// import SQLLogo from "../assets/sql.webp";
+import PostgresqlLogo from "../assets/postgreSQL.webp";
+import SwaggerLogo from "../assets/swaggerLogo.webp";
+import GitLogo from "../assets/git.webp";
 
 const Skills = ({ language }) => {
   return (

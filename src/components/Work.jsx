@@ -2,13 +2,13 @@ import { useState } from "react";
 import { RxDotFilled } from "react-icons/rx";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import ProjectItem from "./ProjectItem";
-import SushiProject from "../assets/SushiProject.png";
-import InvitationProject from "../assets/InvitationProject.png";
-import FortuneProject from "../assets/FortuneProject.png";
-import WeatherProject from "../assets/WeatherProject.png";
-import EcommerceProject from "../assets/EcommerceProject.png";
-import AstroProject from "../assets/AstroProject.png";
-import PortfolioProject from "../assets/portfolioProject.png";
+import SushiProject from "../assets/SushiProject.webp";
+import InvitationProject from "../assets/InvitationProject.webp";
+import FortuneProject from "../assets/FortuneProject.webp";
+import WeatherProject from "../assets/WeatherProject.webp";
+import EcommerceProject from "../assets/EcommerceProject.webp";
+import AstroProject from "../assets/AstroProject.webp";
+import PortfolioProject from "../assets/portfolioProject.webp";
 
 const Work = ({ language }) => {
   const [index, setIndex] = useState(0);
