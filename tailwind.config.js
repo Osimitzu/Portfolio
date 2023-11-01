@@ -16,7 +16,7 @@ export default {
       text800: "#9d1753",
       text900: "#831848",
       text950: "#500727",
-      main50: "#f0f7fe",
+      main50: "#dedede",
       main100: "#deecfb",
       main200: "#c4e0f9",
       main300: "#9cccf4",
