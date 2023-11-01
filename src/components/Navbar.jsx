@@ -31,7 +31,7 @@ const Navbar = ({ darkMode, themeParam, languageMode, language }) => {
 
       <ul className="hidden lg:flex text-xl">
         <Link to="home" smooth={true} duration={500}>
-          <li className="hover:text-text500 dark:hover:text-main400 transition-all duration-300">
+          <li className="hover:text-text500 dark:hover:text-main400 transition-all duration-300 hover:scale-110">
             {language === "english" ? "HOME" : "INICIO"}
           </li>
         </Link>
@@ -41,17 +41,17 @@ const Navbar = ({ darkMode, themeParam, languageMode, language }) => {
           </Link>
         </li> */}
         <Link to="skills" smooth={true} duration={500}>
-          <li className="hover:text-text500 dark:hover:text-main400 transition-all duration-300">
+          <li className="hover:text-text500 dark:hover:text-main400 transition-all duration-300 hover:scale-110">
             {language === "english" ? "SKILLS" : "HABILIDADES"}
           </li>
         </Link>
         <Link to="work" smooth={true} duration={500}>
-          <li className="hover:text-text500 dark:hover:text-main400 transition-all duration-300">
+          <li className="hover:text-text500 dark:hover:text-main400 transition-all duration-300 hover:scale-110">
             {language === "english" ? "WORK" : "PROYECTOS"}
           </li>
         </Link>
         <Link to="contact" smooth={true} duration={500}>
-          <li className="hover:text-text500 dark:hover:text-main400 transition-all duration-300">
+          <li className="hover:text-text500 dark:hover:text-main400 transition-all duration-300 hover:scale-110">
             {language === "english" ? "CONTACT" : "CONTACTO"}
           </li>
         </Link>
@@ -60,7 +60,7 @@ const Navbar = ({ darkMode, themeParam, languageMode, language }) => {
         {/* dark mode */}
         <div
           onClick={darkMode}
-          className="cursor-pointer hover:text-text500 dark:hover:text-main400 transition-all duration-300"
+          className="cursor-pointer hover:text-text500 dark:hover:text-main400 transition-all duration-300 hover:scale-125"
         >
           {themeParam === "dark" ? (
             <MdOutlineDarkMode size={35} />
@@ -71,7 +71,7 @@ const Navbar = ({ darkMode, themeParam, languageMode, language }) => {
         {/* language mode */}
         <div
           onClick={languageMode}
-          className="cursor-pointer hover:text-text500 dark:hover:text-main400 transition-all duration-300"
+          className="cursor-pointer hover:text-text500 dark:hover:text-main400 transition-all duration-300 hover:scale-125"
         >
           {language === "english" ? (
             <SiDocusaurus size={35} />
