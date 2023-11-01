@@ -39,16 +39,16 @@ const Work = ({ language }) => {
       linkCode: "https://github.com/Osimitzu/XV-invitation",
     },
     {
-      name: "Fortune Cookies",
-      backImg: FortuneProject,
-      linkDemo: "https://osimitzu-fortune.netlify.app",
-      linkCode: "https://github.com/Osimitzu/Fortune-Cookie",
-    },
-    {
       name: "Astro Landing",
       backImg: AstroProject,
       linkDemo: "https://osimitzu-astro-landing.netlify.app",
       linkCode: "https://github.com/Osimitzu/astro-landing-page",
+    },
+    {
+      name: "Fortune Cookies",
+      backImg: FortuneProject,
+      linkDemo: "https://osimitzu-fortune.netlify.app",
+      linkCode: "https://github.com/Osimitzu/Fortune-Cookie",
     },
     {
       name: "Portfolio",
@@ -101,7 +101,7 @@ const Work = ({ language }) => {
           <div className="w-full flex justify-center items-center transition-all duration-300">
             <div
               onClick={prevProject}
-              className="w-fit h-[6.5rem] md:h-48 lg:h-[15rem]  flex items-center p-2 bg-main50 dark:bg-main950 cursor-pointer transition-all duration-300"
+              className="w-fit h-[7.2rem] md:h-[13.4rem] lg:h-[16.8rem] flex items-center p-2 bg-main50 dark:bg-main950 cursor-pointer transition-all duration-300 active:scale-95"
             >
               <BsChevronCompactLeft size={25} />
             </div>
@@ -122,7 +122,7 @@ const Work = ({ language }) => {
 
             <div
               onClick={nextProject}
-              className="w-fit h-[6.5rem] md:h-48 lg:h-[15rem]  flex items-center p-2 bg-main50 dark:bg-main950 cursor-pointer transition-all duration-300"
+              className="w-fit h-[7.2rem] md:h-[13.4rem] lg:h-[16.8rem] flex items-center p-2 bg-main50 dark:bg-main950 cursor-pointer transition-all duration-300 active:scale-95"
             >
               <BsChevronCompactRight size={25} />
             </div>
@@ -148,7 +148,7 @@ const Work = ({ language }) => {
               target="_blank"
               rel="noreferrer noopener nofollow"
             >
-              <button className="border-2 flex justify-center items-center w-20 transition-all duration-300 px-6 py-2 hover:bg-text500 hover:border-text500 border-text500 lg:border-main950 dark:hover:bg-main900 dark:hover:border-main900 dark:border-main900 dark:lg:border-main50 text-lg">
+              <button className="border-2 flex justify-center items-center w-20 transition-all duration-300 px-6 py-2 hover:bg-text500 hover:border-text500 border-text500 lg:border-main950 dark:hover:bg-main900 dark:hover:border-main900 dark:border-main900 dark:lg:border-main50 text-lg active:scale-95">
                 {language === "english" ? "Demo" : "Demo"}
               </button>
             </a>
@@ -157,7 +157,7 @@ const Work = ({ language }) => {
               target="_blank"
               rel="noreferrer noopener nofollow"
             >
-              <button className="border-2 flex justify-center items-center w-20 transition-all duration-300 px-6 py-2 hover:bg-text500 hover:border-text500 border-text500 lg:border-main950 dark:hover:bg-main900 dark:hover:border-main900 dark:border-main900 dark:lg:border-main50 text-lg">
+              <button className="border-2 flex justify-center items-center w-20 transition-all duration-300 px-6 py-2 hover:bg-text500 hover:border-text500 border-text500 lg:border-main950 dark:hover:bg-main900 dark:hover:border-main900 dark:border-main900 dark:lg:border-main50 text-lg active:scale-95">
                 {language === "english" ? "Code" : "Code"}
               </button>
             </a>

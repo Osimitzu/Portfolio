@@ -126,7 +126,7 @@ const Navbar = ({ darkMode, themeParam, languageMode, language }) => {
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#4285F4]">
             <a
-              href="https://www.linkedin.com/in/osiriscontreras97/"
+              href="https://www.linkedin.com/in/osimitzu/"
               target="_blank"
               rel="noreferrer noopener nofollow"
               className="flex justify-between items-center w-full h-full"

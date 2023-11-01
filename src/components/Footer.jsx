@@ -8,7 +8,7 @@ const Footer = () => {
       <ul className="flex flex-row justify-center items-center gap-3">
         <li>
           <a
-            href="https://www.linkedin.com/in/osiriscontreras97/"
+            href="https://www.linkedin.com/in/osimitzu/"
             target="_blank"
             rel="noreferrer noopener nofollow"
             className="flex justify-center items-center w-full"
