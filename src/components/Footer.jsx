@@ -46,7 +46,7 @@ const Footer = () => {
           </a>
         </li> */}
       </ul>
-      <p>&copy; 2023</p>
+      <p>&copy; Osiris Contreras 2023</p>
     </div>
   );
 };

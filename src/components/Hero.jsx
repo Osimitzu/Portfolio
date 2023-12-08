@@ -30,13 +30,13 @@ const Home = ({ language }) => {
         </p>
         <div className="w-full flex justify-center items-center lg:py-2">
           <Link to="work" smooth={true} duration={500}>
-            <button className="group border-2 px-6 py-2 flex items-center hover:bg-text500 hover:border-text500 border-text500 lg:border-main950 dark:hover:bg-main900 dark:hover:border-main900 dark:border-main900 dark:lg:border-main50 transition-all duration-300 text-lg active:scale-95">
+            <div className="cursor-pointer group border-2 px-6 py-2 flex items-center hover:bg-text500 hover:border-text500 border-text500 lg:border-main950 dark:hover:bg-main900 dark:hover:border-main900 dark:border-main900 dark:lg:border-main50 transition-all duration-300 text-lg active:scale-95">
               {language === "english" ? " View Work" : "Ver Proyectos"}
               <span className="lg:rotate-0 lg:group-hover:rotate-90 duration-300">
                 <HiArrowNarrowRight className="hidden lg:block lg:ml-4" />
                 <HiArrowNarrowDown className="lg:hidden ml-4" />
               </span>
-            </button>
+            </div>
           </Link>
         </div>
       </div>

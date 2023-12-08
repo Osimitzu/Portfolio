@@ -34,7 +34,7 @@ function App() {
   };
 
   return (
-    <main className="bg-main50 dark:bg-main950 text-main950 dark:text-main50 transition-all duration-300">
+    <main className="bg-main50 dark:bg-main950 text-main950 dark:text-main50 transition-colors duration-300">
       <Navbar
         darkMode={handleTheme}
         themeParam={theme}
@@ -60,7 +60,7 @@ function App() {
         <Footer />
       </section>
       <section className="hidden lg:flex w-full h-8 items-center justify-center">
-        <p>&copy; 2023</p>
+        <p>&copy; Osiris Contreras 2023</p>
       </section>
     </main>
   );
